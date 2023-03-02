@@ -47,12 +47,12 @@ put paired-end gz in ./test_data/fastq/
 Input fastq file must be paired-end sequencing, put it under the ./test_data/fastq/ file, and the sample name is the name before the underline of _1.fastq.gz
 
 ```
-Usage: bash $file/bin/0_run1.sh [-h] [-i input sample name ] [-t threads]
+Usage: bash $file/0_run1.sh [-h] [-i input sample name ] [-t threads]
       -h  <Display this help message.>
       -i   <input sample name. eg ERR3276898_1.fastq.gz sample name is ERR3276898>
       -t   <threads number. eg 30>
 
-eg. bash $file/bin/0_run1.sh -i ERR3276898 -t 30
+eg. bash $file/0_run1.sh -i ERR3276898 -t 30
 
 
 Required parameter:
@@ -66,12 +66,12 @@ Required parameter:
 The result of the first step of identification is located in speciesfinal.txt under the ./test_data/classify/ folder, and the sequence file is located in ./test_data/genome/virus/sample.fa
 
 ```
-Usage: bash $file/bin/0_run2.sh [-h] [-i input sample name ] [-t threads]
+Usage: bash $file/0_run2.sh [-h] [-i input sample name ] [-t threads]
       -h  <Display this help message.>
       -i   <input sample name. eg ERR3276898_1.fastq.gz sample name is ERR3276898>
       -t   <threads number. eg 30>
 
-eg. bash $file/bin/0_run2.sh -i ERR3276898 -t 30
+eg. bash $file/0_run2.sh -i ERR3276898 -t 30
 
 
 Required parameter:
