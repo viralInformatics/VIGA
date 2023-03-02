@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Running vsRNAfinder pipeline
+### Running VIGA pipeline
 
 #### 1 One step
 
