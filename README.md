@@ -58,7 +58,7 @@ usage: 0_runall.py [-h] [--evalue EVALUE] --fastq_1 FASTQ_1 --fastq_2 FASTQ_2
                    --MetaCompass_dir METACOMPASS_DIR
 0_runall.py: the following arguments are required: --fastq_1, --fastq_2, --outdir, --Diamond_VirusProtein_db, --Diamond_nr_db, --virus_fasta, --clean_fastq_1, --clean_fastq_2, --MetaCompass_dir
 
-eg. python SoftwarePath/0_runall.py  --clean_fastq_1 YourPath/test/Fastp/ERR3253399_1.clean.fastq.gz  --clean_fastq_2 YourPath/test/Fastp/ERR3253399_2.clean.fastq.gz   --virus_fasta YourPath/test/Ref/ERR3253399.fa --outdir YourPath/test/ --MetaCompass_dir YourPath/software/MetaCompass --threads 20   --fastq_1 YourPath/ERR3253399_1.fastq.gz  --fastq_2  YourPath/ERR3253399_2.fastq.gz  --Diamond_VirusProtein_db YourPath/db/diamondRefSeqVirusProtein --Diamond_nr_db YourPath/db/diamond-nr --evalue 1e-5
+eg. python SoftwarePath/0_runall.py  --clean_fastq_1 YourPath/test/Fastp/ERR3253399_1.clean.fastq.gz  --clean_fastq_2 YourPath/test/Fastp/ERR3253399_2.clean.fastq.gz  --outdir YourPath/test/ --MetaCompass_dir YourPath/software/MetaCompass --threads 20   --fastq_1 YourPath/ERR3253399_1.fastq.gz  --fastq_2  YourPath/ERR3253399_2.fastq.gz  --Diamond_VirusProtein_db YourPath/db/diamondRefSeqVirusProtein --Diamond_nr_db YourPath/db/diamond-nr --evalue 1e-5
 ```
 
 #### 2 Step by step
