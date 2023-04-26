@@ -101,4 +101,16 @@ eg.
 python SoftwarePath/0_run2.py --clean_fastq_1 YourPath/Fastp/ERR3253399_1.clean.fastq.gz  --clean_fastq_2 YourPath/Fastp/ERR3253399_2.clean.fastq.gz --virus_fastaYourPath/test/Ref/ERR3253399.fa --outdir /YourPath/test/Genome --MetaCompass_dir YourPath/software/MetaCompass --threads 20
 ```
 
+#### 3 Output
+
 The final result is under the ./test/Genome/result folder; the depth picture is in result/picture folder
+
+Each column of output files is described as follows:
+
+| Column             | Description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| VIGA               | The Genome Fraction (%) of the assembled virus contig.(The Reference is the genome that is used as a guide for assembly.) |
+| Abundance          | Using FPKM to quantify virus abundance.                      |
+| Genome Coverage(%) | Genome coverage is calculated as the percentage of all base pairs in the genome that have been sequenced and covered by sequencing reads. |
+| Depth Coverage(%)  | Depth coverage refers to the average number of times each base in the genome has been sequenced. |
+
