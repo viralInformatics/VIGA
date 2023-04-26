@@ -18,7 +18,6 @@ requiredNamed.add_argument('--outdir', help='output path', required=True)
 requiredNamed.add_argument('--Diamond_VirusProtein_db', help='RefSeqVirusProtein db maked by diamond', required=True)
 requiredNamed.add_argument('--Diamond_nr_db', help='raw fastqgz file with single-end', required=True)
 requiredNamed.add_argument('--threads', help='running threads (default: 20)', default=20, type=int)
-requiredNamed.add_argument('--virus_fasta', help='viral accession or chromosome, eg:NC_009334.1 or chr1,chr2, sure NC_009334.1,fa is in ./genome/virus/', required=True)
 requiredNamed.add_argument('--clean_fastq_1', help='clean fastqgz file paired 1', required=True)
 requiredNamed.add_argument('--clean_fastq_2', help='clean fastqgz file paired 2', required=True)
 requiredNamed.add_argument('--MetaCompass_dir', help='MetaCompass software path', required=True)
@@ -63,6 +62,6 @@ if not os.path.exists(softdir+'/../db/virus.genomic.fna.nhr'):
 if not os.path.exists(outdir+'/Ref/'+name+'.fa'):
     os.system('python '+softdir+'/0_run1_paired.py  --fastq_1 '+fastq_1+' --fastq_2 '+fastq_2+' --outdir '+outdir+' --Diamond_VirusProtein_db '+Diamond_VirusProtein_db+' --Diamond_nr_db '+Diamond_nr_db+' --evalue '+evalue+' --threads '+threads)
     os.system('gzip -k -d '+clean_fq1+';gzip -k -d '+clean_fq2)
-    os.system('python '+softdir+'/0_run2.py '+' --clean_fastq_1 '+clean_fastq_1+'.gz   --clean_fastq_2 '+clean_fastq_2+'.gz --virus_fasta '+virus_fasta+' --outdir '+outdir+' --MetaCompass_dir '+MetaCompass_dir+' --threads 20')
+    os.system('python '+softdir+'/0_run2.py '+' --clean_fastq_1 '+clean_fastq_1+'.gz   --clean_fastq_2 '+clean_fastq_2+'.gz --virus_fasta '+outdir +'/Ref/'+name+'.fa --outdir '+outdir+' --MetaCompass_dir '+MetaCompass_dir+' --threads 20')
 if  os.path.exists(outdir+'/Ref/'+name+'.fa'):
     os.system('python '+softdir+'/0_run2.py '+' --clean_fastq_1 '+clean_fastq_1+'  '+' --clean_fastq_2 '+clean_fastq_2+' --virus_fasta '+virus_fasta+' --outdir '+outdir+' --MetaCompass_dir '+MetaCompass_dir+' --threads 20')
