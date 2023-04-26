@@ -47,7 +47,8 @@ if not os.path.exists(outdir+"/Classify/"):
     os.makedirs(outdir+"/Classify/") 
 if not os.path.exists(fastq ):
     os.system('gunzip '+args.fastq)
-
+if os.path.exists(softdir+''/../db/final_out.fa'):
+    os.system('gunzip '+softdir+''/../db/final_out.fa.gz')
 if os.path.exists(softdir+'/../db/virus.genomic.fna.nhr'):
     os.system('makeblastdb  -dbtype nucl  -in '+softdir+'/../db/final_out.fa  -input_type fasta  -parse_seqids  -out  '+softdir+'/../db/virus.genomic.fna')
 

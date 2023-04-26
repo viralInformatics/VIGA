@@ -46,6 +46,8 @@ genome1=outdir+'/metacompass'+'/metacompass_output/metacompass1.final.ctg.fa'
 contig=outdir+'/metacompass'+'/assembly/contigs.fasta'
 contig1=outdir+'/metacompass'+'/assembly/contigs1.fasta'
 
+if os.path.exists(softdir+''/../db/final_out.fa'):
+    os.system('gunzip '+softdir+''/../db/final_out.fa.gz')
 if os.path.exists(softdir+'/../db/virus.genomic.fna.nhr'):
     os.system('makeblastdb  -dbtype nucl  -in '+softdir+'/../db/final_out.fa  -input_type fasta  -parse_seqids  -out  '+softdir+'/../db/virus.genomic.fna')
 
