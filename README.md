@@ -70,7 +70,6 @@ usage: 0_run1_paired.py [-h] [--evalue EVALUE] --fastq_1 FASTQ_1 --fastq_2
                         FASTQ_2 --outdir OUTDIR --Diamond_VirusProtein_db
                         DIAMOND_VIRUSPROTEIN_DB --Diamond_nr_db DIAMOND_NR_DB
                         [--threads THREADS]
-0_run1_paired.py: error: argument --fastq is required
 
 eg. 
 python SoftwarePath/0_run1_paired.py --fastq_1 YourPath/ERR3253399_1.fastq.gz  --fastq_2  YourPath/ERR3253399_2.fastq.gz --outdir  YourPath/test --Diamond_VirusProtein_db YourPath/db/diamondRefSeqVirusProtein --Diamond_nr_db YourPath/db/diamond-nr --evalue 1e-5  --threads 10 
@@ -81,7 +80,7 @@ python SoftwarePath/0_run1_paired.py --fastq_1 YourPath/ERR3253399_1.fastq.gz  -
 usage: 0_run1_single.py [-h] [--evalue EVALUE] --fastq FASTQ --outdir OUTDIR --Diamond_VirusProtein_db
                         DIAMOND_VIRUSPROTEIN_DB --Diamond_nr_db DIAMOND_NR_DB
                         [--threads THREADS]
-0_run1_single.py: error: argument --fastq is required
+
 
 eg. 
 python SoftwarePath/0_run1_paired.py --fastq_1 YourPath/ERR3253399_1.fastq.gz  --fastq_2  YourPath/ERR3253399_2.fastq.gz --outdir  YourPath/test --Diamond_VirusProtein_db YourPath/db/diamondRefSeqVirusProtein --Diamond_nr_db YourPath/db/diamond-nr --evalue 1e-5  --threads 10 
