@@ -1,0 +1,2 @@
+sample_name	num_contigs	total_size_Kbp	min_size_bp	max_size_Kbp	average_size	median_size	N50	mum_N50	size_1Mbp_Kbp	num_1Mbp	size_2Mbp_Kbp	num_2Mbp	size_4Mbp_Kbp	num_4Mbp	size_10Mbp_Kbp	mum_10Mbp	GC_content%	
+metacompass.final.ctg.fa	6383	1455874	142	3216	228.00	202.00	234	2270	0.19	3560	0.00	0	0.00	0	0.00	0	47.46

@@ -1,0 +1,41 @@
+minctglen: 1
+mincov: 1
+readlen: 100
+refsel: tax
+threads: 20
+memory: 8
+ref: /data/12T/fp/plant_1000/testVIGA/test/Ref/ERR3253399.fa
+keepoutput: False
+unpaired: 
+fpaired: /data/12T/fp/plant_1000/testVIGA/test/Fastp/ERR3253399_1.clean.fastq
+rpaired: /data/12T/fp/plant_1000/testVIGA/test/Fastp/ERR3253399_2.clean.fastq
+outdir: /data/12T/fp/plant_1000/testVIGA/test/Genome/metacompass
+pickref: breadth
+clobber: False
+unlock: False
+nolock: False
+force: False
+verbose: False
+reason: False
+dryrun: False
+confirming config file exists...
+config: /data/12T/fp/software/MetaCompass/snakemake/config.json
+confirming file containing reference genomes exists...
+Reference genome file: /data/12T/fp/plant_1000/testVIGA/test/Ref/ERR3253399.fa
+checking for assembly dependencies (Snakemake,Bowtie2,Samtools)
+Snakemake
+/home/root640/software/miniconda3/envs/fp/bin/snakemake
+
+Bowtie2:
+/home/root640/software/miniconda3/envs/fp/bin/bowtie2
+
+Samtools:
+/home/root640/software/miniconda3/envs/fp/bin/samtools
+
+checking for reference selection dependencies (Blast, kmer-mask, mash)
+ALL READS found:
+/data/12T/fp/plant_1000/testVIGA/test/Fastp/ERR3253399_1.clean.fastq
+/data/12T/fp/plant_1000/testVIGA/test/Fastp/ERR3253399_2.clean.fastq
+Snakemake command:
+snakemake --printshellcmds  -T --cores 20 -a --configfile /data/12T/fp/software/MetaCompass/snakemake/config.json --config outdir=/data/12T/fp/plant_1000/testVIGA/test/Genome/metacompass pickref=breadth mcdir=/data/12T/fp/software/MetaCompass length=100 mincov=1 minlen=1 nthreads=20 memory=8 refsel=tax reads=/data/12T/fp/plant_1000/testVIGA/test/Fastp/ERR3253399_1.clean.fastq,/data/12T/fp/plant_1000/testVIGA/test/Fastp/ERR3253399_2.clean.fastq r1=/data/12T/fp/plant_1000/testVIGA/test/Fastp/ERR3253399_1.clean.fastq r2=/data/12T/fp/plant_1000/testVIGA/test/Fastp/ERR3253399_2.clean.fastq reference=/data/12T/fp/plant_1000/testVIGA/test/Ref/ERR3253399.fa --snakefile /data/12T/fp/software/MetaCompass/snakemake/metacompass.ref.paired.py
+

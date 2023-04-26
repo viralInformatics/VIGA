@@ -1,0 +1,10 @@
+[M::mm_idx_gen::0.001*2.94] collected minimizers
+[M::mm_idx_gen::0.011*1.07] sorted minimizers
+[M::main::0.011*1.07] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.011*1.07] mid_occ = 200
+[M::mm_idx_stat] kmer size: 19; skip: 19; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.011*1.07] distinct minimizers: 323 (100.00% are singletons); average occurrences: 1.000; average spacing: 9.954; total length: 3215
+[M::worker_pipeline::0.014*1.10] mapped 1 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: /home/root640/software/miniconda3/envs/fp/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join -r 85 -N 100 -s 65 -z 200 --mask-level 1 --min-occ 200 -g 2500 --score-N 2 --cs -t 10 /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720628.1/quast_corrected_input/combined_reference.fasta /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720628.1/combined_reference/../quast_corrected_input/ragtag_scaffold_fasta1
+[M::main] Real time: 0.014 sec; CPU: 0.016 sec; Peak RSS: 0.043 GB

@@ -1,0 +1,14 @@
+TRINITY_DN0_c0_g2_i1	AGE10662.1	97.0	198	6	0	8	601	12	209	1.1699999999999997e-139	406	287	AGE10662.1 polymerase, partial [Hepatitis B virus]	AGE10662.1 polymerase, partial [Hepatitis B virus]	64.8	192	10407.0
+TRINITY_DN0_c0_g2_i10	QFR04538.1	99.8	588	1	0	3	1766	255	842	0.0	1216	842	QFR04538.1 polymerase [Hepatitis B virus]	QFR04538.1 polymerase [Hepatitis B virus]<>QFR04545.1 polymerase [Hepatitis B virus]	48.7	587	10407.0
+TRINITY_DN0_c0_g2_i11	QFR04510.1	96.2	797	30	0	1	2391	47	843	0.0	1595	843	QFR04510.1 polymerase [Hepatitis B virus]	QFR04510.1 polymerase [Hepatitis B virus]<>QFR04517.1 polymerase [Hepatitis B virus]	67.1	767	10407.0
+TRINITY_DN0_c0_g2_i15	QKI85385.1	96.2	797	30	0	1	2391	47	843	0.0	1603	843	QKI85385.1 polymerase [Hepatitis B virus]	QKI85385.1 polymerase [Hepatitis B virus]	77.8	767	10407.0
+TRINITY_DN0_c0_g2_i18	QKI85385.1	96.2	797	30	0	1	2391	47	843	0.0	1603	843	QKI85385.1 polymerase [Hepatitis B virus]	QKI85385.1 polymerase [Hepatitis B virus]	77.8	767	10407.0
+TRINITY_DN0_c0_g2_i2	QFR04538.1	99.8	588	1	0	3	1766	255	842	0.0	1216	842	QFR04538.1 polymerase [Hepatitis B virus]	QFR04538.1 polymerase [Hepatitis B virus]<>QFR04545.1 polymerase [Hepatitis B virus]	48.7	587	10407.0
+TRINITY_DN0_c0_g2_i3	QFR04510.1	95.0	797	40	0	1	2391	47	843	0.0	1580	843	QFR04510.1 polymerase [Hepatitis B virus]	QFR04510.1 polymerase [Hepatitis B virus]<>QFR04517.1 polymerase [Hepatitis B virus]	79.5	757	10407.0
+TRINITY_DN0_c0_g2_i5	ACM40649.1	95.5	797	36	0	1	2391	47	843	0.0	1588	843	ACM40649.1 polymerase [Hepatitis B virus]	ACM40649.1 polymerase [Hepatitis B virus]	79.5	761	10407.0
+TRINITY_DN0_c0_g2_i6	QFR04510.1	96.0	797	32	0	1	2391	47	843	0.0	1597	843	QFR04510.1 polymerase [Hepatitis B virus]	QFR04510.1 polymerase [Hepatitis B virus]<>QFR04517.1 polymerase [Hepatitis B virus]	64.7	765	10407.0
+TRINITY_DN0_c0_g2_i7	QFR04538.1	99.8	588	1	0	3	1766	255	842	0.0	1216	842	QFR04538.1 polymerase [Hepatitis B virus]	QFR04538.1 polymerase [Hepatitis B virus]<>QFR04545.1 polymerase [Hepatitis B virus]	58.8	587	10407.0
+TRINITY_DN0_c0_g2_i8	CAA53338.1	58.6	1241	77	11	864	4583	11	815	0.0	1311	843	CAA53338.1 polymerase, partial [Hepatitis B virus]	CAA53338.1 polymerase, partial [Hepatitis B virus]	74.0	727	10407.0
+TRINITY_DN0_c0_g2_i9	CAA53338.1	58.9	1241	73	11	864	4583	11	815	0.0	1316	843	CAA53338.1 polymerase, partial [Hepatitis B virus]	CAA53338.1 polymerase, partial [Hepatitis B virus]	74.0	731	10407.0
+TRINITY_DN0_c1_g1_i1	AMQ48155.1	100.0	114	0	0	342	1	11	124	3.66e-76	233	183	AMQ48155.1 core protein [Hepatitis B virus]	AMQ48155.1 core protein [Hepatitis B virus]	99.4	114	10407.0
+TRINITY_DN4_c0_g1_i1	AFM29875.1	98.8	168	2	0	506	3	16	183	5.269999999999998e-119	345	209	AFM29875.1 precore/core protein, partial [Hepatitis B virus]	AFM29875.1 precore/core protein, partial [Hepatitis B virus]	99.6	166	10407.0

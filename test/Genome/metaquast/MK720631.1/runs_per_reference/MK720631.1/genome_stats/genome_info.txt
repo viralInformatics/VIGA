@@ -1,0 +1,14 @@
+reference chromosomes:
+	MK720631.1_MK720631.1 (total length: 3212 bp, total length without N's: 3212 bp, maximal covered length: 3210 bp)
+
+total genome size: 3212
+
+gap min size: 50
+partial gene/operon min size: 100
+
+
+
+assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
+                         | fraction  | ratio       | number    |           | genes     |           | operons   |
+========================================================================================================================
+ragtag-scaffold-fasta1_t | 99.938    | 1.002       | 0         | -         | -         | -         | -         |

@@ -1,0 +1,1 @@
+AB014381, AB032431, AB036910, AB064310, AB073846, AF090842, AJ131567, AJ131569, AJ131571, AJ131572, AJ131573, AJ131574, D00220, LT992443, X51970	10407	k__Viruses;p__Artverviricota;c__Revtraviricetes;o__Blubervirales;f__Hepadnaviridae;g__Orthohepadnavirus;s__Hepatitis B virus

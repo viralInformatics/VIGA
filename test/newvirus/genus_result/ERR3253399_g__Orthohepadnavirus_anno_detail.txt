@@ -1,0 +1,2 @@
+Reads Coverage(%)	Genome Fraction(%)	Abudance(RVKM)
+99.62	1361.13	0.18

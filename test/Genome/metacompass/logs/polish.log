@@ -1,0 +1,35 @@
+Reapeat profile estimated using ntCard in (sec): 4.8474
+Errors k-mer coverage: 13
+Median k-mer coverage: 15
+Repeat k-mer coverage: 1
+Approximate# of distinct k-mers: 985308
+Approximate# of solid k-mers: 200688
+Total time for computing repeat content in (sec): 5.6253
+---------- running ntedit                           : Wed Apr 26 11:11:27 2023
+---------- loading Bloom filter from file           : Wed Apr 26 11:11:27 2023
+
+BlOOMFXX	size(bits): 7224768	hash: 3	 k: 25
+BLOOM::	size: 7224768	number hash functions: 3	kmer size: 25	FPR: 0.000596705
+
+---------- verifying parameters                     : Wed Apr 26 11:11:27 2023
+
+running : ntedit
+ -f contigs.fasta
+ -k 25
+ -z 100
+ -b /data/12T/fp/plant_1000/testVIGA/test/Genome/metacompass/error_correction/contigs
+ -r solidBF_c1_k25.bf
+ -e 
+ -i 4
+ -d 5
+ -x 5
+ -y 9
+ -j 3
+ -m 1
+ -s 0
+ -a 0
+ -t 1
+ -v 0
+
+---------- reading/processing input sequence        : Wed Apr 26 11:11:27 2023
+---------- process complete                         : Wed Apr 26 11:11:27 2023

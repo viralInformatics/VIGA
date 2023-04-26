@@ -1,0 +1,10 @@
+[M::mm_idx_gen::0.002*2.42] collected minimizers
+[M::mm_idx_gen::0.005*3.59] sorted minimizers
+[M::main::0.005*3.58] loaded/built the index for 2 target sequence(s)
+[M::mm_mapopt_update::0.005*3.49] mid_occ = 50
+[M::mm_idx_stat] kmer size: 19; skip: 19; is_hpc: 0; #seq: 2
+[M::mm_idx_stat::0.005*3.44] distinct minimizers: 558 (86.02% are singletons); average occurrences: 1.140; average spacing: 10.105; total length: 6427
+[M::worker_pipeline::0.007*3.06] mapped 1 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -x asm5 -t 20 /data/12T/fp/plant_1000/testVIGA/test/Ref/ERR3253399.fa /data/12T/fp/plant_1000/testVIGA/test/Genome/metacompass/MK720628.1.metacompass.fa
+[M::main] Real time: 0.007 sec; CPU: 0.021 sec; Peak RSS: 0.009 GB

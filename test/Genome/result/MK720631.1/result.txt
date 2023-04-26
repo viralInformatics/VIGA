@@ -1,0 +1,2 @@
+VIGA(%)	abundance	coverage(%)	depth_cov	depth_all
+99.938	209586.982	100.00	2177.57	2177.57

@@ -1,0 +1,11 @@
+contig|protein|pident|length|protein title|qcovhsp
+TRINITY_DN0_c0_g2_i1|AGE10662.1|97.0|198|AGE10662.1 polymerase, partial [Hepatitis B virus]|64.8
+TRINITY_DN0_c0_g2_i11|QFR04510.1|96.2|797|QFR04510.1 polymerase [Hepatitis B virus]|67.1
+TRINITY_DN0_c0_g2_i15|QKI85385.1|96.2|797|QKI85385.1 polymerase [Hepatitis B virus]|77.8
+TRINITY_DN0_c0_g2_i18|QKI85385.1|96.2|797|QKI85385.1 polymerase [Hepatitis B virus]|77.8
+TRINITY_DN0_c0_g2_i11|QFR04510.1|96.2|797|QFR04510.1 polymerase [Hepatitis B virus]|67.1
+TRINITY_DN0_c0_g2_i15|QKI85385.1|96.2|797|QKI85385.1 polymerase [Hepatitis B virus]|77.8
+TRINITY_DN0_c0_g2_i18|QKI85385.1|96.2|797|QKI85385.1 polymerase [Hepatitis B virus]|77.8
+TRINITY_DN0_c0_g2_i3|QFR04510.1|95.0|797|QFR04510.1 polymerase [Hepatitis B virus]|79.5
+TRINITY_DN0_c0_g2_i5|ACM40649.1|95.5|797|ACM40649.1 polymerase [Hepatitis B virus]|79.5
+TRINITY_DN0_c0_g2_i6|QFR04510.1|96.0|797|QFR04510.1 polymerase [Hepatitis B virus]|64.7

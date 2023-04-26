@@ -1,0 +1,2 @@
+Assemblies  ragtag.scaffold.fasta1
+MK720628.1  3206.72               

@@ -1,0 +1,96 @@
+/home/root640/software/miniconda3/envs/fp/bin/quast.py --combined-ref --colors #E31A1C --ls solid --ambiguity-usage all /data/12T/fp/plant_1000/testVIGA/test/Genome/ragtag_output/MK720631.1/ragtag.scaffold.fasta1 -R /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/quast_corrected_input/combined_reference.fasta -o /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference --labels ragtag.scaffold.fasta1
+
+Started: 2023-04-26 12:32:58
+
+Logging to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/quast.log
+NOTICE: Output directory already exists and looks like a QUAST output dir. Existing results can be reused (e.g. previously generated alignments)!
+NOTICE: Maximum number of threads is set to 10 (use --threads option to set it manually)
+
+CWD: /data/12T/fp/plant_1000/testVIGA
+Main parameters: 
+  MODE: meta, threads: 10, minimum contig length: 500, minimum alignment length: 65, \
+  ambiguity: all, threshold for extensive misassembly size: 1000
+
+Reference:
+  /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/quast_corrected_input/combined_reference.fasta ==> combined_reference
+
+Contigs:
+  Pre-processing...
+  /data/12T/fp/plant_1000/testVIGA/test/Genome/ragtag_output/MK720631.1/ragtag.scaffold.fasta1 ==> ragtag.scaffold.fasta1
+
+2023-04-26 12:32:58
+Running Basic statistics processor...
+  Reference genome:
+    combined_reference.fasta, length = 3212, num fragments = 1, GC % = 48.60
+  Contig files: 
+    ragtag.scaffold.fasta1
+  Calculating N50 and L50...
+    ragtag.scaffold.fasta1, N50 = 3215, L50 = 1, Total length = 3215, GC % = 48.68, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/basic_stats/GC_content_plot.pdf
+  Drawing ragtag.scaffold.fasta1 GC content plot...
+    saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/basic_stats/ragtag.scaffold.fasta1_GC_content_plot.pdf
+Done.
+
+2023-04-26 12:33:00
+Running Contig analyzer...
+  ragtag.scaffold.fasta1
+  Logging to files /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/contigs_reports/contigs_report_ragtag-scaffold-fasta1.stdout and contigs_report_ragtag-scaffold-fasta1.stderr...
+  Using existing alignments... 
+  Alignments: test/Genome/metaquast/MK720631.1/combined_reference/contigs_reports/alignments_ragtag-scaffold-fasta1.tsv
+  Analysis is finished.
+
+  Information about interspecies translocations by references for ragtag_scaffold_fasta1 is saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/contigs_reports/interspecies_translocations_by_refs_ragtag_scaffold_fasta1.info
+  Drawing Intergenomic misassemblies (found and supposed) metaQUAST summary plot...
+    saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/contigs_reports/intergenomic_misassemblies.pdf
+  Creating total report...
+    saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2023-04-26 12:33:01
+Running NA-NGA calculation...
+  ragtag.scaffold.fasta1, Largest alignment = 3210, NA50 = 3210, LA50 = 1
+  Drawing cumulative plot...
+    saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/aligned_stats/NAx_plot.pdf
+Done.
+
+2023-04-26 12:33:02
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  ragtag.scaffold.fasta1
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2023-04-26 12:33:02
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2023-04-26 12:33:04
+RESULTS:
+  Text versions of total report are saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/report.html
+  PDF version (tables and plots) is saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/report.pdf
+  Icarus (contig browser) is saved to /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/combined_reference/icarus.html

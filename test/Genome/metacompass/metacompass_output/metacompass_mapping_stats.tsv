@@ -1,0 +1,2 @@
+sample_name	num_selected_refs	num_assembled_refs	num_reads	num_mapped_reads	mapped_reads%	mapped_contigs_paired%	mapped_contigs_unpaired%
+contigs.pilon.fasta	2	2	55216	48337	87.54	79.55	0	

@@ -1,0 +1,44 @@
+Aligning contigs to reference...
+	Using existing alignments...
+Parsing coords...
+Loading reference...
+	Loaded [MK720631.1_MK720631.1]
+	Total Regions: 1
+	Total Region Length: 3212
+Analyzing contigs...
+CONTIG: MK720631.1_RagTag (3215bp)
+Best alignment score: 3210.0 (LEN: 3210, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 2 3211 | 2 3211 | 3210 3210 | 100.0 | MK720631.1_MK720631.1 MK720631.1_RagTag
+
+Analyzing coverage...
+Writing SNPs into /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/runs_per_reference/MK720631.1/contigs_reports/minimap_output/ragtag-scaffold-fasta1.used_snps.gz
+
+Analysis is finished!
+Founded SNPs were written into /data/12T/fp/plant_1000/testVIGA/test/Genome/metaquast/MK720631.1/runs_per_reference/MK720631.1/contigs_reports/minimap_output/ragtag-scaffold-fasta1.used_snps.gz
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap: 0
+Unaligned Contigs: 0 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Contig Bases: 0
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+Extra Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used.
+
+	Covered Bases: 3210
+
+	SNPs: 0
+	Insertions: 0
+	Deletions: 0
+

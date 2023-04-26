@@ -1,0 +1,49 @@
+Assembly	ragtag.scaffold.fasta1
+# contigs (>= 1000 bp)	1
+# contigs (>= 5000 bp)	0
+# contigs (>= 10000 bp)	0
+# contigs (>= 25000 bp)	0
+# contigs (>= 50000 bp)	0
+Total length (>= 1000 bp)	3216
+Total length (>= 5000 bp)	0
+Total length (>= 10000 bp)	0
+Total length (>= 25000 bp)	0
+Total length (>= 50000 bp)	0
+# contigs	1
+Largest contig	3216
+Total length	3216
+Reference length	3215
+GC (%)	48.94
+Reference GC (%)	49.02
+N50	3216
+NG50	3216
+N75	3216
+NG75	3216
+L50	1
+LG50	1
+L75	1
+LG75	1
+# misassemblies	0
+# misassembled contigs	0
+Misassembled contigs length	0
+# local misassemblies	0
+# scaffold gap ext. mis.	0
+# scaffold gap loc. mis.	0
+# unaligned mis. contigs	0
+# unaligned contigs	0 + 0 part
+Unaligned length	0
+Genome fraction (%)	99.907
+Duplication ratio	1.001
+# N's per 100 kbp	0.00
+# mismatches per 100 kbp	3206.72
+# indels per 100 kbp	0.00
+Largest alignment	3212
+Total aligned length	3212
+NA50	3212
+NGA50	3212
+NA75	3212
+NGA75	3212
+LA50	1
+LGA50	1
+LA75	1
+LGA75	1
