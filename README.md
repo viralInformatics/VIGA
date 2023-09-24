@@ -6,87 +6,78 @@ VIGA is an effective workflow for Virus Identification and Genome Assembly from 
 
 ## Installation
 
+### Step1: Download VIGA
+
 Download VIGA with Git from GitHub
 
 ```
 git clone https://github.com/viralInformatics/VIGA.git
 ```
 
-### Database
+or Download ZIP to local
+
+### Step 2: Download Database
 
 ```
 1. download taxdmp.zip [Index of /pub/taxonomy (nih.gov)](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/) and unzip taxdmp.zip and put it in ./db/
+
 2. download "prot.accession2taxid" file from https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/
+
+3. download "nr" file from
+wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz
+tar nr.gz
+
 3. Use Diamond v2.0.11.149 to create two separate databases as the indexing libraries in the current version are incompatible with each other.
 
+4. In order to set up a reference database for DIAMOND, the makedb command needs to be executed with the following command line:
 diamond makedb --in YourPath/RefSeqVirusProtein  -d Diamond_RefSeqVirusProtein --taxonmap YourPath/prot.accession2taxid --taxonnodes YourPath/nodes.dmp
 diamond makedb --in nr -d Dimond_nr --taxonmap YourPath/prot.accession2taxid --taxonnodes YourPath/nodes.dmp
-```
-
-### Software
 
 ```
-conda env create -n VIGA -f VIGA.yml
+
+### Step 3: Installation of dependent software
+
+#### Installing Some Software Using Conda
+
+```
+conda install fastp=0.12.4 trinity=2.8.5 diamond=2.0.11.149 ragtag=2.1.0 quast=5.0.2
 ```
 
-#### MetaCompass
+#### Manual Installation of MetaCompass
 
 https://github.com/marbl/MetaCompass
 
-### Python Dependencies
+### Step 4: Python Dependencies
 
 Base on python 3.6.8
 
 ```
-pip install -r requirements.txt
+pip install -r ./bin/requirements.txt
 ```
+
+
 
 ## Usage
 
-### Running VIGA pipeline
-
-#### 1 One step
-
-If the library of diamon blastx has been built in the corresponding db folder, you can run it directly
+### Step1: Virus Identification
 
 ```
-usage: 0_runall.py [-h] [--evalue EVALUE] --fastq_1 FASTQ_1 --fastq_2 FASTQ_2
-                   --outdir OUTDIR --Diamond_VirusProtein_db
-                   DIAMOND_VIRUSPROTEIN_DB --Diamond_nr_db DIAMOND_NR_DB
-                   [--threads THREADS] --virus_fasta VIRUS_FASTA
-                   --clean_fastq_1 CLEAN_FASTQ_1 --clean_fastq_2 CLEAN_FASTQ_2
-                   --MetaCompass_dir METACOMPASS_DIR
-0_runall.py: the following arguments are required: --fastq_1, --fastq_2, --outdir, --Diamond_VirusProtein_db, --Diamond_nr_db, --virus_fasta, --clean_fastq_1, --clean_fastq_2, --MetaCompass_dir
-
-eg. python SoftwarePath/0_runall.py  --clean_fastq_1 YourPath/test/Fastp/ERR3253399_1.clean.fastq.gz  --clean_fastq_2 YourPath/test/Fastp/ERR3253399_2.clean.fastq.gz  --outdir YourPath/test/ --MetaCompass_dir YourPath/software/MetaCompass --threads 20   --fastq_1 YourPath/ERR3253399_1.fastq.gz  --fastq_2  YourPath/ERR3253399_2.fastq.gz  --Diamond_VirusProtein_db YourPath/db/diamondRefSeqVirusProtein --Diamond_nr_db YourPath/db/diamond-nr --evalue 1e-5
-```
-
-#### 2 Step by step
-
-##### Step1: Virus Identification
-
-```
+#Paire-ended files:
 usage: 0_run1_paired.py [-h] [--evalue EVALUE] --fastq_1 FASTQ_1 --fastq_2
                         FASTQ_2 --outdir OUTDIR --Diamond_VirusProtein_db
                         DIAMOND_VIRUSPROTEIN_DB --Diamond_nr_db DIAMOND_NR_DB
                         [--threads THREADS]
+eg. 
+python /data/12T/fp/software/VIGA/bin/0_run1_paired.py --fastq_1 /data/12T/fp/plant_1000/testVIGA/fastq/ERR3253399_1.fastq.gz  --fastq_2  /data/12T/fp/plant_1000/testVIGA/fastq/ERR3253399_2.fastq.gz --outdir  /data/12T/fp/plant_1000/testVIGA/test --Diamond_VirusProtein_db /data/12T/fp/plant_1000/test_mock/db/diamondRefSeqVirusProtein --Diamond_nr_db /data/12T/fp/plant_1000/test_mock/db/diamond-nr --evalue 1e-5  --threads 10 
+
+#Single-end sequencing files only support step1 virus identification
+usage: 0_run1_single.py [-h] [--evalue EVALUE] --fastq FASTQ --outdir OUTDIR --Diamond_VirusProtein_db DIAMOND_VIRUSPROTEIN_DB --Diamond_nr_db DIAMOND_NR_DB [--threads THREADS]
 
 eg. 
-python SoftwarePath/0_run1_paired.py --fastq_1 YourPath/ERR3253399_1.fastq.gz  --fastq_2  YourPath/ERR3253399_2.fastq.gz --outdir  YourPath/test --Diamond_VirusProtein_db YourPath/db/diamondRefSeqVirusProtein --Diamond_nr_db YourPath/db/diamond-nr --evalue 1e-5  --threads 10 
-
-
-#Single-ended files can only be identified for Step1
-
-usage: 0_run1_single.py [-h] [--evalue EVALUE] --fastq FASTQ --outdir OUTDIR --Diamond_VirusProtein_db
-                        DIAMOND_VIRUSPROTEIN_DB --Diamond_nr_db DIAMOND_NR_DB
-                        [--threads THREADS]
-
-
-eg. 
-python SoftwarePath/0_run1_paired.py --fastq_1 YourPath/ERR3253399_1.fastq.gz  --fastq_2  YourPath/ERR3253399_2.fastq.gz --outdir  YourPath/test --Diamond_VirusProtein_db YourPath/db/diamondRefSeqVirusProtein --Diamond_nr_db YourPath/db/diamond-nr --evalue 1e-5  --threads 10 
+python SoftwarePath/0_run1_single.py --fastq YourPath/sample.fastq.gz --outdir  YourPath/test --Diamond_VirusProtein_db YourPath/db/diamondRefSeqVirusProtein --Diamond_nr_db YourPath/db/diamond-nr --evalue 1e-5  --threads 10 
 ```
 
-##### Step2: Virus Genome Assemble
+### Step2: Virus Genome Assemble
 
 The result of the first step of identification is located in speciesfinal.txt under the ./test/Classify/ folder, and the sequence file is located in ./test/Ref/sample.fa
 
@@ -98,19 +89,7 @@ usage: 0_run2.py [-h] [--len LEN] --clean_fastq_1 CLEAN_FASTQ_1
 0_run2.py: the following arguments are required: --clean_fastq_1, --clean_fastq_2, --virus_fasta, --outdir, --MetaCompass_dir
 
 eg. 
-python SoftwarePath/0_run2.py --clean_fastq_1 YourPath/Fastp/ERR3253399_1.clean.fastq.gz  --clean_fastq_2 YourPath/Fastp/ERR3253399_2.clean.fastq.gz --virus_fastaYourPath/test/Ref/ERR3253399.fa --outdir /YourPath/test/Genome --MetaCompass_dir YourPath/software/MetaCompass --threads 20
+python /data/12T/fp/software/VIGA/bin/0_run2.py --clean_fastq_1 /data/12T/fp/plant_1000/testVIGA/test/Fastp/ERR3253399_1.clean.fastq.gz  --clean_fastq_2 /data/12T/fp/plant_1000/testVIGA/test/Fastp/ERR3253399_2.clean.fastq.gz --virus_fasta /data/12T/fp/plant_1000/testVIGA/test/Ref/ERR3253399.fa --outdir /data/12T/fp/plant_1000/testVIGA/test/Genome --MetaCompass_dir /data/12T/fp/software/MetaCompass --threads 20
 ```
 
-#### 3 Output
-
-The final result is under the ./test/Genome/result folder; the depth picture is in result/picture folder
-
-Each column of output files is described as follows:
-
-| Column             | Description                                                  |
-| ------------------ | ------------------------------------------------------------ |
-| VIGA               | The Genome Fraction (%) of the assembled virus contig.(The Reference is the genome that is used as a guide for assembly.) |
-| Abundance          | Using FPKM to quantify virus abundance.                      |
-| Genome Coverage(%) | Genome coverage is calculated as the percentage of all base pairs in the genome that have been sequenced and covered by sequencing reads. |
-| Depth Coverage(%)  | Depth coverage refers to the average number of times each base in the genome has been sequenced. |
-
+The final result is under the ./test/Genome/result folder
