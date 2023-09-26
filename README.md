@@ -59,6 +59,8 @@ pip install -r ./bin/requirements.txt
 
 ## Usage
 
+Note: If the reference genomes of viruses are known, please place the sequences in the ./Ref folder and name them after the sample using the format SRAID.fa, such as ERR3253399.fa, then proceed to run **Step 2: Virus Genome Assembly** directly.
+
 ### Step1: Virus Identification
 
 ```
@@ -80,6 +82,8 @@ python SoftwarePath/0_run1_single.py --fastq YourPath/sample.fastq.gz --outdir  
 ### Step2: Virus Genome Assemble
 
 The result of the first step of identification is located in speciesfinal.txt under the ./test/Classify/ folder, and the sequence file is located in ./test/Ref/sample.fa
+
+
 
 ```
 usage: 0_run2.py [-h] [--len LEN] --clean_fastq_1 CLEAN_FASTQ_1
