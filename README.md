@@ -26,9 +26,11 @@ or Download ZIP to local
 3. download "RefSeqVirusProtein" file from
 wget -c ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.1.protein.faa.gz
 gzip -d viral.1.protein.faa.gz
+mv viral.1.protein.faa RefSeqVirusProtein
 
 4. download "nr" file from
 wget -c ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz
+or ascp -T  -i  asperaweb_id_dsa.openssh --host=ftp.ncbi.nih.gov --user=anonftp --mode=recv /blast/db/FASTA/nr.gz ./
 gzip -d nr.gz
 
 5. Use Diamond v2.0.11.149 to create two separate databases as the indexing libraries in the current version are incompatible with each other.
