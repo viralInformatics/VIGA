@@ -23,13 +23,17 @@ or Download ZIP to local
 
 2. download "prot.accession2taxid" file from https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/
 
-3. download "nr" file from
-wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz
-tar nr.gz
+3. download "RefSeqVirusProtein" file from
+wget -c ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.1.protein.faa.gz
+gzip -d viral.1.protein.faa.gz
 
-3. Use Diamond v2.0.11.149 to create two separate databases as the indexing libraries in the current version are incompatible with each other.
+4. download "nr" file from
+wget -c ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz
+gzip -d nr.gz
 
-4. In order to set up a reference database for DIAMOND, the makedb command needs to be executed with the following command line:
+5. Use Diamond v2.0.11.149 to create two separate databases as the indexing libraries in the current version are incompatible with each other.
+
+6. In order to set up a reference database for DIAMOND, the makedb command needs to be executed with the following command line:
 diamond makedb --in YourPath/RefSeqVirusProtein  -d Diamond_RefSeqVirusProtein --taxonmap YourPath/prot.accession2taxid --taxonnodes YourPath/nodes.dmp
 diamond makedb --in nr -d Dimond_nr --taxonmap YourPath/prot.accession2taxid --taxonnodes YourPath/nodes.dmp
 
