@@ -58,7 +58,7 @@ https://github.com/marbl/MetaCompass
 Base on python 3.6.8
 
 ```
-pip install -r ./bin/requirements.txt
+pip install pandas=1.1.5 numpy=1.19.5  matplotlib=3.3.4  biopython=1.79
 ```
 
 
