@@ -50,7 +50,8 @@ if not os.path.exists(softdir+''/../db/final_out.fa'):
     os.system('gunzip '+softdir+''/../db/final_out.fa.gz')
 if not os.path.exists(softdir+'/../db/virus.genomic.fna.nhr'):
     os.system('makeblastdb  -dbtype nucl  -in '+softdir+'/../db/final_out.fa  -input_type fasta  -parse_seqids  -out  '+softdir+'/../db/virus.genomic.fna')
-
+if os.path.exists(outdir):
+    os.system('rm -rf '+outdir)
 if not os.path.exists(outdir):
     os.mkdir(outdir)
 if not os.path.exists(clean_fastq_1 and clean_fastq_2):
