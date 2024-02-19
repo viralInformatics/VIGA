@@ -92,10 +92,10 @@ def getfa():
                   print('########################################################################')
                   print(i,' get fasta to '+outdir +'/Ref/'+name +' directory')
                   #print('contain two or more refgenome:')
-                  os.system("blastdbcmd -db "+software+"/db/virushostdb.genomic.fna  -dbtype nucl -entry "+i+' > '+outdir +'/Ref/' +i +'.fa') 
+                  os.system("blastdbcmd -db "+software+"/db/virus.genomic.fna  -dbtype nucl -entry "+i+' > '+outdir +'/Ref/' +i +'.fa') 
                   os.system('cat '+outdir +'/Ref/' +i +'.fa >> '+outdir+'/Ref/' +name +'.fa') 
           else:
-              os.system("blastdbcmd -db "+software+"/db/virushostdb.genomic.fna  -dbtype nucl -entry "+ref+' > '+outdir +'/Ref/'+ ref+'.fa')
+              os.system("blastdbcmd -db "+software+"/db/virus.genomic.fna  -dbtype nucl -entry "+ref+' > '+outdir +'/Ref/'+ ref+'.fa')
               os.system('cat '+outdir +'/Ref/' +ref+'.fa >> '+outdir+'/Ref/' +name +'.fa') 
               print('########################################################################')
               print(ref,' get fasta to '+outdir +'/Ref/'+name +' directory')
