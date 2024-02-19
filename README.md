@@ -89,7 +89,7 @@ python SoftwarePath/0_run1_single.py --fastq YourPath/sample.fastq.gz --outdir  
 
 The result of the first step of identification is located in speciesfinal.txt under the ./test/Classify/ folder, and the sequence file is located in ./test/Ref/sample.fa
 
-
+In the case of ERR3253399, you can directly use ./test/Ref/ERR3253399.fa as the reference genome for Step 2. Virus Genome Assemble, with the following command example
 
 ```
 usage: 0_run2.py [-h] [--len LEN] --clean_fastq_1 CLEAN_FASTQ_1
@@ -99,7 +99,7 @@ usage: 0_run2.py [-h] [--len LEN] --clean_fastq_1 CLEAN_FASTQ_1
 0_run2.py: the following arguments are required: --clean_fastq_1, --clean_fastq_2, --virus_fasta, --outdir, --MetaCompass_dir
 
 eg. 
-python /data/12T/fp/software/VIGA/bin/0_run2.py --clean_fastq_1 /data/12T/fp/plant_1000/testVIGA/test/Fastp/ERR3253399_1.clean.fastq.gz  --clean_fastq_2 /data/12T/fp/plant_1000/testVIGA/test/Fastp/ERR3253399_2.clean.fastq.gz --virus_fasta /data/12T/fp/plant_1000/testVIGA/test/Ref/ERR3253399.fa --outdir /data/12T/fp/plant_1000/testVIGA/test/Genome --MetaCompass_dir /data/12T/fp/software/MetaCompass --threads 20
+python /data/12T/fp/software/VIGA/bin/0_run2.py --clean_fastq_1 /data/12T/fp/testVIGA/Fastp/ERR3253399_1.clean.fastq.gz  --clean_fastq_2 /data/12T/fp/testVIGA/Fastp/ERR3253399_2.clean.fastq.gz --virus_fasta /data/12T/fp/testVIGA/Ref/ERR3253399.fa --outdir /data/12T/fp/testVIGA/Genome --MetaCompass_dir /data/12T/fp/software/MetaCompass --threads 20
 ```
 
 The final result is under the ./test/Genome/result folder, the depth picture is in result/picture folder
