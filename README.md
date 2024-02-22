@@ -102,8 +102,7 @@ eg.
 python /data/12T/fp/software/VIGA/bin/0_run2.py --clean_fastq_1 /data/12T/fp/testVIGA/Fastp/ERR3253399_1.clean.fastq.gz  --clean_fastq_2 /data/12T/fp/testVIGA/Fastp/ERR3253399_2.clean.fastq.gz --virus_fasta /data/12T/fp/testVIGA/Ref/ERR3253399.fa --outdir /data/12T/fp/testVIGA/Genome --MetaCompass_dir /data/12T/fp/software/MetaCompass --threads 20
 ```
 
-The final result is under the ./test/Genome/result folder, the depth picture is in result/picture folder
-
+The final result is under the ./test/Genome/result folder, the depth picture is in result/picture folder, the "virus.consensus.fa" means a consensus sequence generated directly from the sequencing data based on the reference genome.
 | *Column*    | *Description*                                    |
 | ----------- | ------------------------------------------------ |
 | VIGA(%)     | Viral Genome Completeness Evaluated by MetaQuast |
