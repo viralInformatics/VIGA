@@ -68,7 +68,7 @@ else:
     print('*********fastp failed :', time.asctime(time.localtime(time.time())),'\n')
 if os.path.exists(clean_fq1):
     print('*********Trinity denovo assembly begins :', time.asctime(time.localtime(time.time())),'\n')
-    os.system("Trinity --seqType fq --left "+clean_fq1+"  --right "+clean_fq2+" --output "+Trinity_out+" --CPU 26 --max_memory 50G")
+    os.system("Trinity --seqType fq --left "+clean_fq1+"  --right "+clean_fq2+" --output "+Trinity_out+" --CPU " +threads+" --max_memory 50G")
 else:
     print('*********Trinity failed :', time.asctime(time.localtime(time.time())),'\n')
 if os.path.exists(Trinity_out+'/Trinity.fasta'):
