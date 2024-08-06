@@ -20,6 +20,7 @@ def judgmentvirus():
     
     dfall=pd.read_csv(besthit_doc,sep='\t',header=None, names=['qseqid','sseqid','pident','length','mismatch','gapopen','qstart','qend','sstart','send','evalue','bitscore','slen','stitle','salltitles','qcovhsp','nident','staxids'])
     dfall1=dfall.dropna(subset=['staxids'])
+    dfall1['staxids'] = dfall1['staxids'].astype(str)
 #read all virus taxid
     dfvirus=pd.read_csv(software+'/db/virustaxid',sep='\t',header=None, names=['taxid'])
     viruslist=dfvirus['taxid'].drop_duplicates().values.tolist()
