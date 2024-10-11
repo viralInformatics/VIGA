@@ -68,7 +68,7 @@ else:
 if os.path.exists(Trinity_out+'/Trinity.fasta'):
     print('*********diamond blastx against virus protein database begins :', time.asctime(time.localtime(time.time())),'\n')
     os.system("diamond blastx -q "+Trinity_out+'/Trinity.fasta'+ ' --db '+Diamond_VirusProtein_db+' -o '+Diamond_out+'.vp.txt -e '+evalue+'  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore  slen  stitle salltitles qcovhsp nident staxids')
-    os.system("cat "+Diamond_out+".vp.txt |awk '{print $1}'|uniq> "+Diamond_out+"vp1nd")
+    os.system("cat "+Diamond_out+".vp.txt |awk '{print $1}'|sort|uniq> "+Diamond_out+"vp1nd")
     os.system("cat "+Trinity_out+'/Trinity.fasta | seqkit grep -f  '+Diamond_out+"vp1nd>"+Diamond_out+".fa")
 else:
     print('*********Trinity failed :', time.asctime(time.localtime(time.time())),'\n')
