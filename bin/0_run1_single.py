@@ -21,7 +21,7 @@ args = parser.parse_args()
 
 softdir = sys.path[0]
 evalue=str(args.evalue)
-fastq = args.fastq.split('.gz')
+fastq = args.fastq.split('.gz')[0]
 
 outdir = args.outdir
 Diamond_VirusProtein_db= args.Diamond_VirusProtein_db
@@ -47,10 +47,10 @@ if not os.path.exists(outdir+"/Classify/"):
     os.makedirs(outdir+"/Classify/") 
 if not os.path.exists(fastq ):
     os.system('gunzip '+args.fastq)
-if os.path.exists(softdir+''/../db/final_out.fa'):
-    os.system('gunzip '+softdir+''/../db/final_out.fa.gz')
-if os.path.exists(softdir+'/../db/virus.genomic.fna.nhr'):
-    os.system('makeblastdb  -dbtype nucl  -in '+softdir+'/../db/final_out.fa  -input_type fasta  -parse_seqids  -out  '+softdir+'/../db/virus.genomic.fna')
+if os.path.exists(softdir+'/db/final_out.fa'):
+    os.system('gunzip '+softdir+'/db/final_out.fa.gz')
+if os.path.exists(softdir+'/db/virus.genomic.fna.nhr'):
+    os.system('makeblastdb  -dbtype nucl  -in '+softdir+'/db/final_out.fa  -input_type fasta  -parse_seqids  -out  '+softdir+'/db/virus.genomic.fna')
 
 
 
